@@ -1,119 +1,128 @@
+/* Ronen Giladov 209506757 && Shoham Avrham 318232469 Assignment 1 */
+
+/* Styles for the main container */
 .container {
     width: 100%;
     max-width: 540px;
-    background-color: #fffbf5;
-    margin: 35px auto 20px;
-    padding: 15px 30px 70px;
-    border-radius: 50px;
+    background-color: #fffbf5; /* Light cream background */
+    margin: 35px auto 20px; /* Center the container horizontally with top margin */
+    padding: 15px 30px 70px; /* Padding for content inside */
+    border-radius: 50px; /* Rounded corners */
     text-align: center; /* Center-align text within this container */
-    border: 3px inset #D7FBEF;
-
+    border: 3px inset #D7FBEF; /* Border with light blue color */
 }
 
+/* Styling for paragraphs */
 p {
-    background: linear-gradient(45deg, #ff00cc, #3333ff);
-    -webkit-background-clip: text;
-    color: transparent;
-    
+    background: linear-gradient(45deg, #ff00cc, #3333ff); /* Gradient background */
+    -webkit-background-clip: text; /* Clip text to background */
+    color: transparent; /* Hide text */
 }
 
-
-
+/* Body styles */
 body {
-    
-    min-height: 100vh;
-    background: linear-gradient(135deg, #F3ACEA,#EAF3AC) ;
-
-
+    min-height: 100vh; /* Minimum height to fill viewport */
+    background: linear-gradient(135deg, #F3ACEA,#EAF3AC); /* Gradient background */
 }
 
+/* Styles for the cat logo */
 #catLogo {
-    display: block;
+    display: block; /* Center the logo */
     margin-left: auto;
     margin-right: auto;
-    max-width: 235px;
-    background: linear-gradient(240deg, #F3ACEA, #ED7ABF) ;
-    border: 3px inset #D7FBEF;
-    border-radius: 55px;
+    max-width: 235px; /* Limit logo width */
+    background: linear-gradient(240deg, #F3ACEA, #ED7ABF); /* Gradient background */
+    border: 3px inset #D7FBEF; /* Border with light blue color */
+    border-radius: 55px; /* Rounded corners */
 }
+
+/* Styles for titles */
 .title {
-    text-align: center;
+    text-align: center; /* Center-align text */
 }
 
-
-/* Font */ 
+/* Font */
 @font-face {
     font-family: myFirstFont;
-    src: url("penna.otf");
-}
-p {
-    font-family: myFirstFont;
-    font-size: x-large;
-    font-weight: bold;
-}
-h1 {
-    font-family: myFirstFont;
-}
-h4 {
-    font-family: myFirstFont;
-    font-size: 30px;
-    margin-bottom: 10px;
+    src: url("penna.otf"); /* Path to custom font */
 }
 
-.input-container {
-    display: flex;
-    align-items: center;
+/* Paragraph styles */
+p {
+    font-family: myFirstFont; /* Apply custom font */
+    font-size: x-large; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
 }
+
+/* Heading styles */
+h1 {
+    font-family: myFirstFont; /* Apply custom font */
+}
+
+h4 {
+    font-family: myFirstFont; /* Apply custom font */
+    font-size: 30px; /* Larger font size */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+/* Styles for input container */
+.input-container {
+    display: flex; /* Display input elements in a row */
+    align-items: center; /* Align items vertically */
+}
+
 .input-container h4 {
     margin-right: 10px; /* Add spacing between label and input */
-    margin-bottom: 40px;
-    margin-left: 20px;
+    margin-bottom: 40px; /* Bottom margin for label */
+    margin-left: 20px; /* Left margin for label */
 }
 
+/* Hover effect for input fields */
 input:hover {
     box-shadow: 0 0 5px rgba(244, 164, 15, 0.912); /* Orange shadow */
-  }
+}
+
+/* Hover effect for buttons */
 button:hover {
-    box-shadow: 0 0 5px rgba(244, 164, 15, 0.912); /* Orange shadow */
-  }
-  
+    box-shadow: 0 0 5px rgba(244, 164, 15, 0.912); 
+}
 
+/* Styles for registration form */
 #reg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Display form elements in a column */
+    flex-direction: column; /* Arrange form elements vertically */
+    align-items: center; /* Center-align form elements */
 }
 
-
-/* Style the input fields */
+/* Styles for input fields */
 input {
-    padding: 10px;
-    border: 2px groove #D7FBEF;
-    background-color: #fff;
-    margin-bottom: 5;
-    border-radius: 50px;
+    padding: 10px; /* Padding for input fields */
+    border: 2px groove #D7FBEF; /* Border with light blue color */
+    background-color: #fff; /* White background */
+    margin-bottom: 5; /* Bottom margin */
+    border-radius: 50px; /* Rounded corners */
 }
 
-/* Style the submit button */
+/* Styles for the submit button */
 button {
-    padding: 10px 20px;
-    background-color: #ED7ABF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-bottom:20px;
-    margin-top: 50px;
-    width: 20%;
-    font-size: 18px;
-    border-radius: 50px;
+    padding: 10px 20px; /* Padding for button */
+    background-color: #ED7ABF; /* Pink background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    margin-bottom:20px; /* Bottom margin */
+    margin-top: 50px; /* Top margin */
+    width: 20%; /* Width of button */
+    font-size: 18px; /* Font size */
+    border-radius: 50px; /* Rounded corners */
 }
 
+/* Styles for small password error message */
 #errorContainerSmall {
-    color: red;
+    color: red; /* Red text color */
 }
 
+/* Styles for passwords not matching error message */
 #errorContainerNotMatching {
-    color: red;   
+    color: red; /* Red text color */
 }
-
-
